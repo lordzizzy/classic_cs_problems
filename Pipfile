@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 termcolor = "*"
 black = "*"
+ccs-shared = {editable = true, path = "./ccs_shared"}
 
 [dev-packages]
 

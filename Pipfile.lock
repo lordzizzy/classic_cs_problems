@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cd99ff8087fa4b518d2ccb1088f06ed730fc3ac4d5f38ab645df0a4a0cac9c57"
+            "sha256": "65fa6b0b34ad0e587555f3f7277ac84c8f0e51141095b94ed571ca066261445b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -29,6 +29,10 @@
             ],
             "index": "pypi",
             "version": "==20.8b1"
+        },
+        "ccs-shared": {
+            "editable": true,
+            "path": "./ccs_shared"
         },
         "click": {
             "hashes": [
