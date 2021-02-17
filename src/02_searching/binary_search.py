@@ -6,12 +6,6 @@ C = TypeVar("C", bound="Comparable")
 
 
 def binary_contains(seq: Sequence[C], key: C) -> bool:
-    """
-    >>> binary_contains([1,3,4,6,7], 4)
-    True
-    >>> binary_contains([1,3,4,6,7], 2)
-    False
-    """
     low = 0
     high = len(seq) - 1
     while low <= high:
@@ -25,7 +19,7 @@ def binary_contains(seq: Sequence[C], key: C) -> bool:
     return False
 
 
-if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()
+def test_binary_contains() -> None:
+    nums = [1, 3, 4, 6, 7]
+    key = 4
+    assert binary_contains(nums, key) == True, f"{nums} should contain {key}"
